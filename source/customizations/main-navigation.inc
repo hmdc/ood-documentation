@@ -10,7 +10,7 @@ This section provides the outline of how the navigation bar is generated to begi
 with, then details the various ways to modify it.
 
 Once you understand how the navigation bar is generated automatically,
-you can take steps to custimize it as you see fit.
+you can take steps to customize it as you see fit.
 
 .. _understanding-default-nav-bar:
 
@@ -38,7 +38,7 @@ these manifests files and builds additional dropdown menus (or adds to existing 
 based on the ``category`` field.
 
 By default, the system will generate a new dropdown menu for every ``category``
-it encounters.  Within each dropdown menu it will add seperators for each
+it encounters.  Within each dropdown menu it will add separators for each
 ``subcategory`` it encounters.
 
 .. _limit-auto-generated-menu-bars:
@@ -63,7 +63,7 @@ use the :ref:`nav_categories configuration property <nav_categories>`.
   this scheme, Open OnDemand 3.0 will not.  3.0 will only support the ``nav_categories``
   property.
 
-  Here is the `2.0 documentation for controling the navbar`_.
+  Here is the `2.0 documentation for controlling the navbar`_.
 
 Using manifests to create menu items
 ....................................
@@ -139,7 +139,7 @@ configuration would be (without showing any discovered apps).
       - user
       - logout
 
-The configuration above would be equvialent to the default navigation bar as described
+The configuration above would be equivalent to the default navigation bar as described
 in :ref:`understanding-default-nav-bar`.
 
 As menus are dynamically discovered *from your system*, this documentation can only cover
@@ -208,7 +208,7 @@ Here's an example of defining all of them and what that would look like.
 
 .. figure:: /images/def-templates-menu.png
     :align: center
-    :alt: An image of the navigation bar. From left to right the items are "All Apps" link, "Apps" dropdown menu, "My Interactive Sesssions" link, "Develop" drop down menu, "Help" drop down menu, "Logout" link and 'logged in as ood' text.
+    :alt: An image of the navigation bar. From left to right the items are "All Apps" link, "Apps" dropdown menu, "My Interactive Sessions" link, "Develop" drop down menu, "Help" drop down menu, "Logout" link and 'logged in as ood' text.
 
 .. _menus-based-on-applications:
 
@@ -326,7 +326,7 @@ Menus for custom pages
 **********************
 
 If you've enabled `custom_pages_guide`_ you can create navigation menus
-or single links directly to those pages through the the ``page`` attribute.
+or single links directly to those pages through the ``page`` attribute.
 
 .. code-block:: yaml
 

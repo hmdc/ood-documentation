@@ -35,7 +35,7 @@ There are two locations to check depending on what information is needed:
 
 :file:`/var/log/httpd/<hostname>_access.log`
 
-- Where OnDemand will log succsseful logins.
+- Where OnDemand will log successful logins.
 
 .. warning::
 
@@ -46,7 +46,7 @@ There are two locations to check depending on what information is needed:
 The NGINX logs are the output of the user :ref:`PUN <glossary>`. These logs will capture things relevant 
 to a *particular user* such as:
 
-- Debuggin issues related to job submissions for a user. For example, commands being issued to the scheduler 
+- Debugging issues related to job submissions for a user. For example, commands being issued to the scheduler 
   (``sbatch``, ``qsub``, etc) can be seen here by searching for ``execve``.
 - Issues related to PUNs crashing and/or pages not rendering correctly.
 
@@ -72,7 +72,7 @@ information they may need there as well for connections and errors.
 .. note::
 
     The files will be *owned by the user* and so admins will need to ensure they are either 
-    able to substitue user or escalate to root in order to see these files.
+    able to substitute user or escalate to root in order to see these files.
 
 In general the session data or job submission files for apps across the dashboard, such as the Job Composer, 
 Batch Connect, or Frame-renderer, all start from the root of:
