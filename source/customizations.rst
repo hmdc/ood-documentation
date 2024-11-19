@@ -20,15 +20,15 @@ So, for example, if you wished to disable the file browser you would simply
 change it's directory to 700 so it's unreadable by regular users.
 
 When this directory is unreadable by regular users, the functionality
-it provides will be disabeled.
+it provides will be disabled.
 
 .. code-block:: sh
 
   sudo chmod 700 /var/www/ood/apps/sys/files
 
-Alternatively, if you wished to limit acess you can do so through group
+Alternatively, if you wished to limit access you can do so through group
 permissions. For example, if you wanted to limit access to the file browser
-to only memebers in the Unix group ``staff``, you would simply apply the
+to only members in the Unix group ``staff``, you would simply apply the
 applicable file permission such that anonymous users cannot access the
 directory while members of the ``staff`` Unix group can.
 
@@ -80,7 +80,7 @@ Because the announcement is rendered via ERB you can do some interesting things,
       msg: |
         <% if Time.now < Time.new(2018, 9, 24, 12, 0, 0) %>
         A **Ruby Partial Downtime** for 4 hours on Monday, September 24 from 8:00am to 12:00pm
-        will prevent SSH login to Ruby nodes and and Ruby VDI sessions.
+        will prevent SSH login to Ruby nodes and Ruby VDI sessions.
         <% end %>
 
 .. note:: Warnings about the announcement file being missing may be present in users' nginx logs. Despite the warning the Dashboard will still function normally without those files being present.
@@ -105,7 +105,7 @@ To display a MOTD file on the Dashboard ensure that the environment variables ``
     The ``_erb`` formats support ERB rendering to generate more dynamic messages.
 
 .. warning::
-  Some MOTD formats like ``rss``, ``markdown`` and ``markdown_erb`` can contain malicous
+  Some MOTD formats like ``rss``, ``markdown`` and ``markdown_erb`` can contain malicious
   HTML content. For your safety, by default, the Open OnDemand system will not render
   HTML.  We provide :ref:`a configuration to enable HTML rendering in MOTD <motd_render_html>`
   should you need to render HTML.
@@ -797,7 +797,7 @@ Full examples are below:
     # pin any app with an exact match on the metadata field_of_science of biology
     - field_of_science: 'biology'
 
-    # pin any app with an glob match *bio* on the metadata field_of_science
+    # pin any app with a glob match *bio* on the metadata field_of_science
     - field_of_science: '*bio*'
 
 
@@ -849,7 +849,7 @@ Custom layouts in the dashboard
 -------------------------------
 
 Administrators can now customize what widgets appear on the dashboard and how they're
-layed out on the page.
+laid out on the page.
 
 In it's simplest form this feature allows for a rearrangement of existing widgets. As
 of 2.1 the existing widgets are:
@@ -1215,7 +1215,7 @@ Grafana support
 
 It's possible to display Grafana graphs within the ActiveJobs app when a user expands a given job.
 
-Grafana must be configured to support embedded panels and at this time it is also required to have a anonymous organization.  Below are configuration options are needed to support displaying Grafana panels in ActiveJobs. Adjust `org_name` to match whatever organization you wish to be anonymous.
+Grafana must be configured to support embedded panels and at this time it is also required to have an anonymous organization.  Below are configuration options are needed to support displaying Grafana panels in ActiveJobs. Adjust `org_name` to match whatever organization you wish to be anonymous.
 
 .. warning::
 

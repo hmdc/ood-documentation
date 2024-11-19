@@ -6,7 +6,7 @@ Debugging Interactive Apps
 Log location
 ------------
 
-:ref:`Information about interative app log location. <interactive-app-logs>`
+:ref:`Information about interactive app log location. <interactive-app-logs>`
 
 
 App completes without being able to connect to it.

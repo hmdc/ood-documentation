@@ -112,7 +112,7 @@ The job mapping is specific to a cluster's resource manager.
 bin_overrides:
 --------------
 
-`bin_overrides` adds the ability for a site to specify full paths to alternatives to the configured resource manager's client executables. This advanced feature allows a site considerable flexibilty to write wrappers to handle logging, environment or default setting, or use 3rd party API compatible alternative clients without having to alter the resource manager installation.
+`bin_overrides` adds the ability for a site to specify full paths to alternatives to the configured resource manager's client executables. This advanced feature allows a site considerable flexibility to write wrappers to handle logging, environment or default setting, or use 3rd party API compatible alternative clients without having to alter the resource manager installation.
 
 .. warning ::
     `bin_overrides` is an advanced feature. OOD relies both on return codes from clients, and on parsing the standard output in order to get information about submitted jobs. Care and testing is recommended.

@@ -6,7 +6,7 @@ Support Tickets
 The Dashboard now supports sending a support ticket to your institution Help Desk system.
 The feature uses email as the delivery mechanism, but it could be extended to support others.
 
-To enable this feature, define the settings needed using the the configuration property ``support_ticket``.
+To enable this feature, define the settings needed using the configuration property ``support_ticket``.
 Once this configuration object is defined, the ``Submit Support Ticket`` link will be shown in the ``Help`` navigation menu
 and in all interactive session cards.
 
@@ -24,9 +24,9 @@ A brief description of the default form fields used in the support ticket form:
 
 * **Username:** Logged in user. Username will be added to the support ticket body for reference.
 * **Email:** Email address to communicate regarding this support ticket. A single email address is supported.
-* **CC:** Additional email address to communicate regardig this ticket. A single email address is supported.
+* **CC:** Additional email address to communicate regarding this ticket. A single email address is supported.
 * **Subject:** Brief description of the problem.
-* **Attachments:** Add screeshots of the problem to help with debugging and troubleshooting.
+* **Attachments:** Add screenshots of the problem to help with debugging and troubleshooting.
 * **Description:** Detail description of the problem.
 
 Configuration
@@ -47,8 +47,8 @@ These are the most common configuration properties needed to enable and setup th
 .. warning::
 
   Use caution when supplying username and password in delivery_settings.  These files are readable by
-  unprivileged users and as such this information can be found by a sophsticated user without privilege
-  escelation.
+  unprivileged users and as such this information can be found by a sophisticated user without privilege
+  escalation.
 
 Sample configuration:
 
@@ -70,7 +70,7 @@ Sample configuration:
       # Optional.
       # Text added to the page under the support ticket header
       description: |
-        My optional description Text for the support ticket feture
+        My optional description Text for the support ticket feature
       
       # email section is required and should always be present.
       # It configures how the support ticket email is sent
