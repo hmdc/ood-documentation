@@ -1,5 +1,5 @@
 
-Sub-Apps and Reconfiguring exsting apps
+Sub-Apps and Reconfiguring existing apps
 =======================================
 
 Sub-Apps are a term we use for providing variants of existing apps.
